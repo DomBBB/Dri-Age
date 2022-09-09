@@ -229,13 +229,13 @@
                 Rectangle:
                     size: self.size
 
-    MDFillRoundFlatButton: #Confirm button
+    MDFillRoundFlatButton:
         size_hint: 0.1, 0.1
         pos_hint: {'center_x': 0.95, 'center_y': 0.75}
         on_press:
             app.confirmUpload()
 
-    MDIcon: #Icon confirm button
+    MDIcon:
         id: upload_icon
         halign: 'center'
         icon: 'check-circle-outline'
@@ -243,15 +243,13 @@
         pos_hint: {'center_x': 0.95, 'center_y': 0.75}
         opacity: 1
 
-
-
-    MDFillRoundFlatButton: #Back button
+    MDFillRoundFlatButton:
         size_hint: 0.1, 0.1
         pos_hint: {'center_x': 0.05, 'center_y': 0.75}
         on_press:
             app.openCamera()
 
-    MDIcon: #Icon back button
+    MDIcon:
         id: upload_icon
         halign: 'center'
         icon: 'arrow-left-bold'
